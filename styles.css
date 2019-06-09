@@ -183,10 +183,16 @@ body, .button {
   border: 1px solid #f82370;
   color: #f53f4f;
 }
+.button_theme_white:hover {
+	background-color: #c8c8c8;
+}
 .button_theme_red {
   background-color: #ff4e2e;
   border: none;
   color: #fff;
+}
+.button_theme_red:hover {
+	background-color: #ffa999;
 }
 .button_size_s {
   width: 207px;

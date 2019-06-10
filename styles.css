@@ -184,7 +184,7 @@ body, .button {
   color: #f53f4f;
 }
 .button_theme_white:hover {
-	background-color: #c8c8c8;
+	background-color: #fafafa;
 }
 .button_theme_red {
   background-color: #ff4e2e;
@@ -892,7 +892,7 @@ body, .button {
     text-align: center;
   }
   .about-me__my-name {
-    font-size: 30px; 
+    font-size: 30px;
   }
   .my-name__header {
     margin-top: 12px;

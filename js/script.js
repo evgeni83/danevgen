@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	$('.fly-item').removeClass('fly-item_anim');
 	var $page = $('html, body');
 	$('a[href*="#"]').click(function() {
 		$page.animate({

@@ -356,6 +356,14 @@ body, .button {
   left: 49.1vw;
   top: 538px;
 }
+.fly-item_anim {
+  transform: rotate(-360deg);
+  font-size: 0;
+  top: 50%;
+  left: 50%;
+  bottom: 50%;
+  right: 50%;
+}
 .fly-item-brace__price-term {
   left: 6.3vw;
   top: 57px;

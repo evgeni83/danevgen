@@ -253,7 +253,7 @@ body, .button {
   behavior: url(PIE.htc);
 }
 .popup__title {
-  font: bold 18px/32px Arial, san-serif;
+  font: bold 18px/32px Arial, sans-serif;
   text-align: center;
 }
 .popup__form {

@@ -299,7 +299,7 @@ body, .button {
 .fly-item {
   position: absolute;
   font-weight: bold;
-  transition-property: transform;
+  transition-property: all;
   transition-delay: 1s;
   transition-duration: 1s;
 }

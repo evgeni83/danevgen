@@ -155,12 +155,13 @@
 			<div class="popup flex-box order-call-form">
 				<button class="button close-button"></button>
 				<h2 class="popup__title">Представьтесь, пожалуйста, и&nbsp;я&nbsp;Вам&nbsp;перезвоню</h2>
-				<form class="popup__form flex-box" method="post">
-					<label class="input-label" for="name">Введите Ваше имя:</label>
-					<input class="input-field" type="text" id="name" name="name" placeholder="Иван Иванов">
-					<label class="input-label" for="phone-number">Введите номер Вашего телефона:</label>
-					<input class="input-field" type="text" id="phone-number" name="phone-number" placeholder="+79991234567">
-					<input class="button button_size_m button_theme_red" type="submit" value="Заказать звонок">	
+				<form class="popup__form flex-box" method="post" action="#">
+					<label class="input-label" for="name">Введите Ваше имя: *</label>
+					<input class="input-field" type="text" id="name" name="name" placeholder="Иван Иванов" pattern="[А-Яа-яЁё\s]+$" required>
+					<label class="input-label" for="phone-number">Введите номер Вашего телефона: *</label>
+					<input class="input-field" type="text" id="phone" name="phone" required>
+					<div>* поле обязательно для заполнения</div>
+					<input class="button button_size_m button_theme_red" type="submit" value="Заказать звонок">
 				</form>
 			</div>
 		</div>
@@ -199,6 +200,7 @@
 	<script src="js/jquery-1.11.0.min.js"></script>
 	<script src="js/jquery-migrate-1.2.1.min.js"></script>
 	<script src="slick/slick.min.js"></script>
+	<script src="js/jquery.inputmask.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>

@@ -49,11 +49,12 @@ $(document).ready(function(){
 		$('.popup-container').fadeIn(500);
 		$('.popup-container').css('display', 'flex');
 		$('body').css('overflow', 'hidden');
-		return false;				
-	});	
+		return false;
+	});
 	$('.close-button').click(function () {
 		$(this).parent().parent().fadeOut(100);
 		$('body').css('overflow', 'auto');
 		return false;
 	});
+	$("#phone").inputmask("+7(999)999-99-99");
 });

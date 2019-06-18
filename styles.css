@@ -304,6 +304,8 @@ body, .button {
   overflow-x: hidden;
 }
 .fluid-container_theme_gradient {
+  background-image: -moz-linear-gradient(77deg, rgb(255, 143, 90) 0%, rgb(255, 47, 150) 99%);
+  background-image: -webkit-linear-gradient(77deg, rgb(255, 143, 90) 0%, rgb(255, 47, 150) 99%);
   background-image: -ms-linear-gradient( 77deg, rgb(255,143,90) 0%, rgb(255,47,150) 99%);
   position: relative;
 }

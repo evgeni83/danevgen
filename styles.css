@@ -580,11 +580,15 @@ body, .button {
   font-size: 45px;
   font-weight: bold;
   line-height: 60px;
+  text-shadow: 1px 1px 0 #00000030, -1px -1px 0 #00000030;
+  z-index: 99;
 }
 .price-term__footnote {
   font-size: 18px;
   max-width: 940px;
   line-height: 30px;
+  text-shadow: 1px 1px 0 #00000030,  -1px -1px 0 #00000030;
+  z-index: 99;
 }
 .footer-content {
   min-height: 262px;
@@ -594,7 +598,7 @@ body, .button {
 }
 .footer__nav-link {
   display: block;
-  line-height: 33px;
+  line-height: 40px;
   font-size: 18px;
   color: #8993ad;
 }
@@ -618,11 +622,13 @@ body, .button {
 .button__footer {
   width: 248px;
 }
-
+.footer__social {
+  height: auto;
+}
 .social__link {
   display: inline-block;
   background-image: url(img/sprite.png);
-  margin-top: 31px;
+  margin-top: 15px;
   margin-right: 26px;
 }
 .vk {
@@ -850,6 +856,13 @@ body, .button {
     -o-flex-wrap: wrap;
     flex-wrap: wrap;
   }
+  .footer__contacts {
+    padding-left: 25;
+    padding-right: 25px;
+  }
+  .footer__contacts a {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -1031,7 +1044,7 @@ body, .button {
     text-align: left;
   }
   .price-term {
-    height: 436px;
+    height: 330px;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -1057,7 +1070,7 @@ body, .button {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding-top: 40px;
+    padding-top: 20px;
   }
   .footer__nav-link {
     font-size: 15px;
@@ -1070,7 +1083,7 @@ body, .button {
     line-height: 46px;
   }
   .footer__social {
-    padding: 20px 0 46px;
+    padding: 4px 0 15px;
   }
   .copyright {
     height: 50px;

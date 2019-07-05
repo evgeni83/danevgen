@@ -56,5 +56,14 @@ $(document).ready(function(){
 		$('body').css('overflow', 'auto');
 		return false;
 	});
-	$("#phone").inputmask("+7(999)999-99-99");
+	$('.popup-container').click(function (event) {
+		if (event.target == this) {
+			$(this).fadeOut(100);
+			$('body').css('overflow', 'auto');
+			return false;
+		}
+	});
+	jQuery(function ($) {
+		$("#phone").mask("+7(999) 999-99-99");
+	});
 });

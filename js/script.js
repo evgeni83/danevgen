@@ -1,4 +1,6 @@
 $(document).ready(function () {
+	$('.fly-item').removeClass('fly-item_anim');
+
 	var $page = $('html, body');
 	$('a[href*="#"]').click(function () {
 		$page.animate({
@@ -6,6 +8,7 @@ $(document).ready(function () {
 		}, 400);
 		return false;
 	});
+	
 	$('.multiple-items').slick({
 		dots: true,
 		infinite: true,
@@ -48,8 +51,6 @@ $(document).ready(function () {
 		$('.header__mobile-links').removeClass('header__mobile-links_active');
 	});
 
-	$('.fly-item').removeClass('fly-item_anim');
-
 	$('.show_popup').click(function () {
 		$('.form-container').fadeIn(500);
 		$('.popup-container').css('display', 'flex');
@@ -57,19 +58,19 @@ $(document).ready(function () {
 		return false;
 	});
 
-	$('.popup__form').submit(function () { // проверка на пустоту заполненных полей. Атрибут html5 — required не подходит (не поддерживается Safari)
-		$.ajax({
-			type: "POST",
-			url: "mail.php",
-			data: $(this).serialize()
-		}).done(function () {
-			$(this).parent().parent().parent().fadeOut(100);
-			$('.thanks-cotainer').fadeIn();
-			$('.popup__form').find('input').val('');
-			$('.popup__form').trigger('reset');
-		});
-		return false;
-	});
+	// $('.popup__form').submit(function () { // проверка на пустоту заполненных полей. Атрибут html5 — required не подходит (не поддерживается Safari)
+	// 	$.ajax({
+	// 		type: "POST",
+	// 		url: "mail.php",
+	// 		data: $(this).serialize()
+	// 	}).done(function () {
+	// 		$(this).parent().parent().parent().fadeOut(100);
+	// 		$('.thanks-cotainer').fadeIn();
+	// 		$('.popup__form').find('input').val('');
+	// 		$('.popup__form').trigger('reset');
+	// 	});
+	// 	return false;
+	// });
 
 	$('.close-button').click(function () {
 		$(this).parent().parent().fadeOut(100);

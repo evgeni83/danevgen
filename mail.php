@@ -28,8 +28,8 @@ $mail->addAddress('evgeni.daniluk@yandex.ru');     // Кому будет ухо
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Заявка с сайта';
-$mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone;
+$mail->Subject = 'Заявка с сайта danevgen.ru';
+$mail->Body    = '' .$name . ' оставил заявку и телефон ' .$phone;
 $mail->AltBody = '';
 
 if(!$mail->send()) {

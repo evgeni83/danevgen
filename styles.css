@@ -247,6 +247,7 @@ body,
 .button {
   border: none;
   outline: 0 none;
+  border-radius: 5px;
   cursor: pointer;
   z-index: 10;
   transition: all .3s;
@@ -664,7 +665,7 @@ body,
   height: 60px;
   width: 61px;
   position: absolute;
-  top: 40%;
+  top: 30%;
   z-index: 10;
 }
 
